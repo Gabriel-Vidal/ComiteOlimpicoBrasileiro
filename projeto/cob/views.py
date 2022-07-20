@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('Comite olimpico brasileiro')
+    return render(request, 'cob/home.html')
 
 
 def atletas(request):
