@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from cob.views import home, atletas, competicao
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home),
+    path('atletas/', atletas),
+    path('competicao', competicao),
 ]
