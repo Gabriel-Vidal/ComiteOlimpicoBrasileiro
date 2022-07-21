@@ -83,6 +83,7 @@
             font-size: 1.6rem;
             font-family: var(--font-primary);
             background: var(--color-gray-1);
+            color: var(--color-dark-text);
         }
 
         h1,
@@ -102,12 +103,12 @@
         }
 
         .main-header-container {
-            background: var(--color-primary-dark);
+            background: rgb(14, 158, 21);
         }
 
         .main-logo {
             font-size: 4rem;
-            color: var(--color-alert-dark);
+            color: var(--color-gray-1);
             text-decoration: none;
             display: flex;
             flex-flow: row nowrap;
@@ -125,7 +126,7 @@
             border: .2rem solid var(--color-primary-dark);
             max-width: 64rem;
             margin: 0 auto;
-            border-radius: .4rem;
+            border-radius: 4rem;
             position: relative;
             transition: all 300ms ease-in-out;
         }
@@ -137,6 +138,7 @@
             outline: none;
             padding: 1rem;
             transition: all 300ms ease-in-out;
+            border-radius: 4rem;
         }
 
         .search-input {
@@ -152,7 +154,7 @@
 
         .search-button:focus {
             outline: 1px solid rgb(235, 235, 235);
-            background: rgba(0, 0, 0, .08);
+            background: rgba(0, 0, 0, .0);
         }
 
         .search-form:focus-within {
@@ -180,6 +182,8 @@
             box-shadow: -5px 5px 10px rgba(0, 0, 0, .2);
             transform: scale(1);
             transition: all 300ms ease-in-out;
+            border-radius: 4rem;
+            overflow: hidden;
         }
 
 
@@ -192,8 +196,74 @@
         }
 
         .corrida-list-item:hover  {
-            transform: scale(1.009);
+            transform: scale(1.005);
+            box-shadow: -9px 9px 19px rgba(0, 0, 0, .2);
 
         }
-    </style>
+
+        .corrida-title-container {
+            padding: var(--spacing-gutter-medium);
+            padding-bottom: 2rem;         
+        }
+
+        .corrida-author {
+            padding: 0 var(--spacing-gutter-medium);
+        }
+
+        .corrida-content {
+            padding:  var(--spacing-gutter-medium);
+            padding-top: 2rem; 
+        }
+
+        .corrida-author-item {
+            color: var(--color-gray-4);
+            margin-right: 1rem;
+        
+        }
+
+        .corrida-author a {
+            color:rgb(40, 165, 187);
+            transition: all 300ms ease-in-out;
+            text-decoration: none;
+        }
+        
+        .corrida-author a:hover {
+            color: var(--color-primary-dark)
+        }
+
+        .corrida-meta-container {
+            display: flex;
+            flex-flow: row wrap;
+            padding:  var(--spacing-gutter-medium);
+            background: var(--color-gray-1);
+            text-align: center;
+        }
+
+        .corrida-meta {
+            display: flex;
+            flex-flow: column nowrap;
+            flex-grow: 1;
+            flex-shrink: 1;
+            text-align: center;
+        }
+
+        .corrida-meta-title {
+           font-size: 1.6rem; 
+        }
+
+        .corrida-footer  a {
+            background: var(--color-primary-dark);
+            display: block;
+            color:var(--color-white);
+            text-decoration: none;
+            text-align: center;
+            padding: 1.5rem var(--spacing-gutter-medium);
+            transition: all 300ms ease-in-out;
+        }
+
+        .corrida-footer  a:hover{
+            filter: brightness(1.8);
+        }
+
+     </style>
 </head>
