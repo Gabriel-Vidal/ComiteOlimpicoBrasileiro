@@ -1,10 +1,8 @@
 from django.urls import path
 
-from cob.views import home, atletas, competicao
+from cob.views import home
 
 
 urlpatterns = [
-    path('', home),
-    path('atletas/', atletas),
-    path('competicao', competicao),
+    path('', home),   
 ]
