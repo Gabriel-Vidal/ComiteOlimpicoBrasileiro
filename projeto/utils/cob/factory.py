@@ -1,7 +1,7 @@
 
 from random import randint
 
-from fake import Faker
+from faker import Faker
 
 
 def rand_ratio():
@@ -21,7 +21,7 @@ def make_eventos():
         'distance_unit': 'Metros',
         'event_location': '<i class="fas fa-map-marked-alt"></i>',
         'created_at': fake.date_time(),
-        'part':{
+        'part': {
             'name': fake.name(),
             'age': fake.random_number(digits=2, fix_len=True),
             'weight': fake.random_number(digits=2, fix_len=True),
@@ -31,7 +31,7 @@ def make_eventos():
             'cat_name': fake.word()
         },
         'cover': {
-            'url': 'https://loremflickr.com/%s/%s/sports' % rand_ratio(),           
+            'url': 'https://loremflickr.com/%s/%s/sports' % rand_ratio()
         },
     }
 
