@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from utils.cob.factory import make_eventos
+from util.cob.factory import make_eventos
 
 
 def home(request):
