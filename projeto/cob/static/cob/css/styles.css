@@ -249,6 +249,11 @@ h6 {
 
 }
 
+.preparation-steps {
+    padding: var(--spacing-gutter-medium);
+    text-align: center;
+    justify-content: center;
+}
 
 
 .main-footer {

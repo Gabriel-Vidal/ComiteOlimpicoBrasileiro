@@ -5,7 +5,7 @@
         <img src="https://i.ytimg.com/vi/gGuVPfhR6dU/maxresdefault.jpg" alt="corrida">
     </div>
     <div class="corrida-title-container">
-        <h2 class="corrida-title">Corrida de 100m rasos</h2>
+        <h2 class="corrida-title">{{ cob.title }}</h2>
     </div>
     <div class="corrida-author">
         <span class="corrida-author-item">
@@ -36,13 +36,21 @@
         </div>
     </div>
 
-        <footer class="corrida-footer">
-            <a class="corrida-read-more button button-dark button-full-widht" href="/cob/3/">
-                <i class="fas fa-eye"></i>
-                <span>Ver mais...</span>
-            </a>
-        </footer>
-    
+    {% if is_detail_page is not True %}
+    <footer class="corrida-footer">
+        <a class="corrida-read-more button button-dark button-full-widht" href="/cob/3/">
+            <i class="fas fa-eye"></i>
+            <span>Ver mais...</span>
+        </a>
+    </footer>
+    {% endif %}
+
+    {% if is_detail_page is True %}
+        <div  class="preparation-steps">
+            <p> {{ cob.part }}</p>
+        </div>
+    {% endif %}
+
 </div>
 
 
