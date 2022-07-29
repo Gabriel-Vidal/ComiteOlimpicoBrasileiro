@@ -179,6 +179,11 @@ h6 {
     padding-bottom: 2rem;         
 }
 
+.corrida-title-container a {
+    text-decoration: none;
+    color: var(--color-primary-dark)
+}
+
 .corrida-author {
     padding: 0 var(--spacing-gutter-medium);
 }
@@ -249,7 +254,7 @@ h6 {
 
 }
 
-.preparation-steps {
+.part {
     padding: var(--spacing-gutter-medium);
     text-align: center;
     justify-content: center;

@@ -2,10 +2,16 @@
 
 <div class="corrida corrida-list-item">
     <div class="corrida-cover">
-        <img src="https://i.ytimg.com/vi/gGuVPfhR6dU/maxresdefault.jpg" alt="corrida">
+        <a href="{% url 'COB:evento' cob.id %}">
+            <img src="https://i.ytimg.com/vi/gGuVPfhR6dU/maxresdefault.jpg" alt="corrida">
+        </a>
     </div>
     <div class="corrida-title-container">
-        <h2 class="corrida-title">{{ cob.title }}</h2>
+        <h2 class="corrida-title">
+            <a href="{% url 'COB:evento' cob.id %}">
+                {{ cob.title }}
+            </a>
+        </h2>
     </div>
     <div class="corrida-author">
         <span class="corrida-author-item">
@@ -38,7 +44,7 @@
 
     {% if is_detail_page is not True %}
     <footer class="corrida-footer">
-        <a class="corrida-read-more button button-dark button-full-widht" href="/cob/3/">
+        <a class="corrida-read-more button button-dark button-full-widht" href="{% url 'COB:evento' cob.id %}">
             <i class="fas fa-eye"></i>
             <span>Ver mais...</span>
         </a>
@@ -46,7 +52,7 @@
     {% endif %}
 
     {% if is_detail_page is True %}
-        <div  class="preparation-steps">
+        <div  class="part">
             <p> {{ cob.part }}</p>
         </div>
     {% endif %}

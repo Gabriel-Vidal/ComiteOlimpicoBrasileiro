@@ -13,6 +13,7 @@ fake = Faker('pt_BR')
 
 def make_eventos():
     return{
+        'id': fake.random_number(digits=2, fix_len=True),
         'title': fake.sentence(nb_words=3),
         'decription': fake.sentence(nb_words=12),
         'event_time': fake.random_number(digits=2, fix_len=True),
