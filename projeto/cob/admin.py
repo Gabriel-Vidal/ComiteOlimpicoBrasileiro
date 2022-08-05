@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Competicao
+
+
+class CompeticaoAdmin(admin.ModelAdmin):
+    ...
+
+
+admin.site.register(Competicao, CompeticaoAdmin)
