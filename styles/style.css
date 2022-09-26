@@ -7,6 +7,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
 header {
     background-image: linear-gradient(to right, black, rgb(55, 55, 55) );
 }
@@ -54,4 +55,27 @@ header {
     position: relative;
     top: 17px;
     left: 10px;    
+}
+
+.main-container {
+    width: 80%;
+    position: relative;
+    
+    top: 230px;
+}
+
+.main-container img{
+    width: 600px;
+    display: inline-block;
+}
+
+.texto {
+    display: inline-block;
+    font-size: 22px;
+    color: white;
+    width: 800px;
+    position: relative;
+    left: 50px;
+    bottom: 75px;
+    
 }
