@@ -145,6 +145,8 @@ width: 100%;
     transition: .6s;
 }
 
+
+
 /* Contato */
 
 
@@ -165,7 +167,7 @@ width: 100%;
     display: flex;
     padding: 25px 20px;
     height: 170px;
-    background-color: #F6F6F6;
+    background-color: #dddddd;
 }
 
 .cont1:nth-child(2){
